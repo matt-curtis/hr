@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8" />
+		
+		<title>App | HyphenLink Client</title>
+		
+		<link rel="stylesheet" href="../../css/all.min.css" />
+		<link rel="stylesheet" href="../../css/hyphenlink-client.min.css" />
+	</head>
+
+	<body>
+		<div id="app-page" mounted>
+			<header class="pseudo-clear-both">
+				<span id="alpha-logo" class="hyphenlink-alpha-logo"></span>
+
+				<a class="button small float-right">Import ePub</a>
+			</header>
+
+			<div id="tab-bar">
+				<span class="tab-item">Library</span>
+				<span class="tab-item selected" data-superscript-text="5">Imports</span>
+			</div>
+
+			<div id="tab-container">
+
+				<div class="tab-view visible" id="imports-tab-view">
+					
+					<div class="import-list-item">
+						<div class="import-list-item-file-name">epub3-moby-dick.epub</div>
+						<div class="import-list-item-status">Uploading...</div>
+					</div>
+
+					<div class="import-list-item success">
+						<div class="import-list-item-file-name">epub3-moby-dick.epub</div>
+						<div class="import-list-item-status">Imported successfully.</div>
+					</div>
+
+					<div class="import-list-item failed">
+						<div class="import-list-item-file-name">epub3-moby-dick.epub</div>
+						<div class="import-list-item-status">Failed to import.</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8" />
+		
+		<title>App | HyphenLink Client</title>
+		
+		<link rel="stylesheet" href="../../css/all.min.css" />
+		<link rel="stylesheet" href="../../css/hyphenlink-client.min.css" />
+	</head>
+
+	<body>
+		<div id="app-page" mounted>
+			<header class="pseudo-clear-both">
+				<span id="alpha-logo" class="hyphenlink-alpha-logo"></span>
+
+				<a class="button small float-right">Import ePub</a>
+			</header>
+
+			<div id="tab-bar">
+				<span class="tab-item selected">Library</span>
+				<span class="tab-item">Imports</span>
+			</div>
+
+			<div id="tab-container">
+
+				<div class="tab-view visible" id="library-tab-view">
+					<div id="library-sidebar">
+						<input id="search-field" type="text" placeholder="Search" />
+
+						<div id="book-list">
+							<div class="book-list-item">
+								<span class="book-list-item-thumb no-thumb"></span>
+								<span class="book-list-item-details">
+									<div class="book-list-item-title">The Black Prism</div>
+									<div class="book-list-item-series">The Lightbringer, #1</div>
+									<div class="book-list-item-author">Brent Weeks</div>
+								</span>
+							</div>
+						</div>
+
+						<div id="book-count">7 books in library</div>
+					</div>
+					
+					<div id="library-book-info">
+						<div class="library-book-info-thumb no-thumb"></div>
+						
+						<div class="library-book-info-text">
+							<div class="library-book-info-title">The Black Prism</div>
+							<div class="library-book-info-series">The Lightbringer, #1</div>
+							<div class="library-book-info-author">Brent Weeks</div>
+
+							<a class="button small">Download ePub</a>
+							<a class="button small">Edit</a>
+							<a class="button small destructive">Delete</a>
+						</div>
+
+						<div class="clear-left"></div>
+
+						<div class="library-book-info-description">THE BLACK PRISM begins a brand new action-packed tale of magic and adventure ...<br /><br />Guile is the Prism, the most powerful man in the world. He is high priest and emperor, a man whose power, wit, and charm are all that preserves a tenuous peace. Yet Prisms never last, and Guile knows exactly how long he has left to live.<br /><br />When Guile discovers he has a son, born in a far kingdom after the war that put him in power, he must decide how much he's willing to pay to protect a secret that could tear his world apart.</div>
+					</div>
+					
+					<!--
+					<div id="library-book-info" class="editing">
+						<div class="library-book-info-thumb no-thumb"></div>
+						
+						<div class="library-book-info-text">
+							<input type="text" class="library-book-info-title medium" value="The Black Prism" placeholder="Title" />
+							<input type="text" class="library-book-info-author medium" value="Brent Weeks" placeholder="Author" />
+							
+							<a class="button small">Save</a>
+							<a class="button small destructive">Cancel</a>
+						</div>
+
+						<div class="clear-left"></div>
+
+						<textarea class="library-book-info-description">THE BLACK PRISM begins a brand new action-packed tale of magic and adventure ...<br /><br />Guile is the Prism, the most powerful man in the world. He is high priest and emperor, a man whose power, wit, and charm are all that preserves a tenuous peace. Yet Prisms never last, and Guile knows exactly how long he has left to live.<br /><br />When Guile discovers he has a son, born in a far kingdom after the war that put him in power, he must decide how much he's willing to pay to protect a secret that could tear his world apart.</textarea>
+					</div>
+				</div>
+				-->
+			</div>
+		</div>
+	</body>
+
+</html>
