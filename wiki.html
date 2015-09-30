@@ -28,7 +28,9 @@
 		</style>
 	</head>
 
-	<body class="markdown-body" style="padding: 15px;">
+	<body>
+		<div class="markdown-body" style="padding: 15px;"></div>
+
 		<script type="text/javascript">
 			var wikiURL = "https://raw.githubusercontent.com/wiki/hyphen-reader/hyphen";
 
@@ -46,7 +48,7 @@
 			req.onload = function(e){
 				var response = req.response;
 
-				document.body.innerHTML = marked(response);
+				document.getElementsByClassName("markdown-body")[0].innerHTML = marked(response);
 			};
 
 			req.send();
