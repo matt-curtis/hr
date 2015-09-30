@@ -4,7 +4,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<title></title>
+		<title>Loading... - Wiki</title>
+
+		<link rel="icon" href="/images/site-icon.png" />
+		<link rel="apple-touch-icon" href="/images/app-icon-120.png" />
+		<meta property="og:image" content="http://hyphenreader.com/images/site-icon.png" />
 
 		<script type="text/javascript">
 			/**
@@ -31,7 +35,7 @@
 			var filePath = (window.location.hash || window.location.search).substring(1);
 			var url = wikiURL + filePath + ".md";
 
-			document.title = filePath.substring(filePath.lastIndexOf("/")+1).replace(/-/g, " ");
+			document.title = filePath.substring(filePath.lastIndexOf("/")+1).replace(/-/g, " ") + " - Wiki";
 
 			//	Content
 
