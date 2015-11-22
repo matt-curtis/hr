@@ -1,20 +1,27 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<title>Hyphen | ePub Reader for iOS</title>
+		<title>Hyphen - ePub Reader for iOS</title>
 
 		<meta name"”description" content="Hyphen is an ePub Reader for iOS" />
-		<meta name="keywords" content="ePub, iOS, eReader, iBooks" />
+		<meta name="keywords" content="ebook, epub, ereader, ibooks, ios, iphone, ipad" />
 		
 		<!-- Icons -->
 
 		<link rel="icon" href="images/site-icon.png" />
 		<link rel="apple-touch-icon" href="images/app-icon-120.png" />
-		<meta property="og:image" content="http://hyphenreader.com/images/site-icon.png" />
 
+		<!-- Open Graph Metadata -->
+
+		<meta property="og:title" content="Hyphen Reader" />
+		<meta property="og:description" content="Hyphen is an ePub Reader for iOS" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://hyphenreader.com/" />
+		<meta property="og:image" content="http://hyphenreader.com/images/site-icon.png" />
+	
 		<!-- Twitter -->
 
 		<meta name="twitter:card" content="summary" />
@@ -25,11 +32,12 @@
 
 		<!-- CSS -->
 
-		<link rel="stylesheet" type="text/css" href="css/beta.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/all.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.min.css" />
 
 		<!-- JS -->
 
-		<script type="text/javascript" src="js/beta.min.js" async="true"></script>
+		<script type="text/javascript" src="js/home.min.js"></script>
 
 		<!-- Google Analytics -->
 
@@ -46,43 +54,138 @@
 
 	<body>
 
-		<div class="global-body">
-			<div class="global-header">
-				<a href="/" class="global-header-logo no-style-link"><div class="global-header-logo-image"></div></a>
-			</div>
-
-			<div class="page-content">
-				<div class="promo-content">
-					<h1 id="promo-content-header" class="bottom-margin-only">THE EPUB READER FOR IOS</h1>
-
-					<div>Hyphen is launching soon on November 22. Sign up below, or <a href="http://twitter.com/hyphenreader">follow @HyphenReader</a> to be notified when we launch.</div>
-
-					<form target="_blank" method="get" action="https://docs.google.com/forms/d/1d58WhJBUXrrNY1AiwXgwsBjZwCC6ebVoze32oEd21fY/viewform?usp=send_form">
-						<div class="underlined-input-wrapper" id="beta-invite-input">
-							<input type="text" placeholder="you@your-email.com" name="entry.1707317380" />
-							<div class="underlined-input-wrapper-end">
-								<button class="button">Get Notified</button>
-							</div>
-						</div>
-					</form>
-				</div>
-
-				<div class="promo-iphone" id="beta-promo-iphone">
-					<div class="promo-iphone-content">
-						<div class="promo-iphone-screen-1" data-visible></div>
-						<div class="promo-iphone-screen-2"></div>
-						<div class="promo-iphone-screen-3"></div>
-						<div class="promo-iphone-screen-4"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="global-footer">
-				&copy; 2015 HYPHENREADER.COM, ALL RIGHTS RESERVED<br />
-				CONTACT: <a href="mailto:hyphenapp@gmail.com">HYPHENREADER@GMAIL.COM</a><br />
-				TWITTER: <a href="https://twitter.com/hyphenreader">@HYPHENREADER</a>
+		<div class="global-header">
+			<div class="global-header-logo-image"></div>
+			<div class="global-header-menu">
+				<ul>
+					<li><a target="_blank" href="https://github.com/hyphen-reader/hyphen/wiki">WIKI</a></li>
+					<li><a href="#" id="contact-and-support-link">CONTACT &amp; SUPPORT</a></li>
+				</ul>
 			</div>
 		</div>
 
+		<div id="first-page" class="page">
+			<div class="page-content">
+				<div id="promo-text">MEET HYPHEN,<br />YOUR NEW EPUB READER.</div>
+
+				<div id="download-or-try">
+					<a target="_blank" href="itunes" class="no-style-link"><img src="images/app-store-badge.svg" /></a>
+					<a target="_blank" href="itunes-free" class="active" id="try-link">OR TRY IT FOR FREE</a>
+				</div>
+
+				<div class="iphone-preview" id="first-page-preview-iphone">
+					<img class="iphone-preview-content" src="images/app-screen-loomings.png" />
+				</div>
+			</div>
+		</div>
+
+		<div class="page alternate-bg" id="styling-feature-page">
+			<div class="page-content feature-text-right">
+				<div class="feature-page-text">
+					<div class="feature-page-title">Personalize your reading experience.</div>
+					<div class="feature-page-desc">Hyphen comes packed with a ton of options for custom colors, fonts, font sizes, line heights, paragraph indentations, margins - ...well, you get the idea. You can even use styling on a per-book basis.<br /><br />And if that’s not enough, you can also add your own CSS. Cool, right?<br /><br />
+					<a href="#" class="active">Get it now</a></div>
+				</div>
+				<div class="feature-page-media"><div id="styling-feature-screens"><!--
+				--><div class="styling-feature-screen"></div><div class="styling-feature-screen"></div><div class="styling-feature-screen"></div><!--
+				--></div></div>
+			</div>
+		</div>
+
+		<div class="page" id="highlight-feature-page">
+			<div class="page-content">
+				<div class="feature-page-media">
+					<div class="iphone-preview sit-right">
+						<video class="iphone-preview-content" src="video/highlight-preview.mp4" autoplay loop />
+					</div>
+				</div>
+				<div class="feature-page-text">
+					<div class="feature-page-title">Highlight effortlessly.</div>
+					<div class="feature-page-desc">Tap-and-drag, or use the selection handles for even more control.<br /><br />Write your comments and thoughts, then export or share your highlights.
+					<br /><br />
+					<a href="#" class="active">Get it now</a></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page alternate-bg">
+			<div class="page-content feature-text-right">
+				<div class="feature-page-text">
+					<div class="feature-page-title">Use Goodreads?</div>
+					<div class="feature-page-desc">Shelve books, make status updates and post quotes, all right from the app.
+					<br /><br />
+					<a href="#" class="active">Get it now</a></div>
+				</div>
+				<div class="feature-page-media">
+					<div class="iphone-preview sit-left">
+						<video class="iphone-preview-content" src="video/goodreads-preview.mp4" autoplay loop />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page" id="other-features-page">
+			<div class="page-content">
+				<div id="other-features-header">SOME OF THE OTHER FEATURES...</div>
+				<div id="other-features-list">
+					<div class="feature-list-item">
+						<div class="feature-list-item-title">ADD BOOKS WITH EASE</div>
+						<div class="feature-list-item-desc">Add ePubs using your favorite cloud services - Dropbox, Google Drive, and more. You can also use the in-app web browser to download ePubs, or add them using iTunes.</div>
+					</div>
+					<div class="feature-list-item">
+						<div class="feature-list-item-title">NIGHT MODE</div>
+						<div class="feature-list-item-desc">Transition Hyphen’s reading interface to soothing, darker colors  at night.</div>
+					</div>
+					<div class="feature-list-item">
+						<div class="feature-list-item-title">METADATA</div>
+						<div class="feature-list-item-desc">Edit the title, author, subjects, covers and more of your books. Hyphen can even lookup book covers and metadata for you.</div>
+					</div>
+
+					<div class="feature-list-item">
+						<div class="feature-list-item-title">SHELVE &amp; SORT</div>
+						<div class="feature-list-item-desc">Add books to custom shelves, and sort by author, title, last read, or date added.</div>
+					</div>
+					<div class="feature-list-item">
+						<div class="feature-list-item-title">DEFINE &amp; TRANSLATE</div>
+						<div class="feature-list-item-desc">Translations of the text you’re reading are only a tap away with Google Translate integration. Lookup words and terms in Wikipedia, Dictionary.com or Google.</div>
+					</div>
+					<div class="feature-list-item">
+						<div class="feature-list-item-title">VOCABULARY</div>
+						<div class="feature-list-item-desc">Add words to a vocabulary list and export them easily. Hyphen can optionally automatically add words you lookup in the dictionary to your vocabulary list.</div>
+					</div>
+
+					<div class="feature-list-item">
+						<div class="feature-list-item-title">INTERACTIVE</div>
+						<div class="feature-list-item-desc">Tap and hold a link to open it in the in-app browser, or Safari. Images zoom in, letting you see every detail. Swipe through and jump between images throughout the text with the Image Viewer.</div>
+					</div>
+					<div class="feature-list-item">
+						<div class="feature-list-item-title">ADE PAGES SUPPORT</div>
+						<div class="feature-list-item-desc">Hyphen utilizes ADE pages, so you’ll always have a cross-reader compatible way of finding and noting where you are in a book.</div>
+					</div>
+					<div class="feature-list-item">
+						<div class="feature-list-item-title">INCREDIBLY FAST</div>
+						<div class="feature-list-item-desc">Download and import books in the blink of an eye. Hyphen’s ePub Rendering System is optimized so that there’s the least delay between you and the text.</div>
+					</div>
+				</div>
+
+				<div id="read-to-bottom-footer">More features are being added all the time. Have a suggestion?<br />
+Send it via <a href="http://twitter.com/hyphenreader" target="_blank">Twitter</a> or <a href="mailto:hyphenreader@gmail.com" target="_blank">Email</a>, or post it directly in the <a href="https://github.com/hyphen-reader/hyphen/issues" target="_blank">Issue Tracker</a>.<br /><br /><div id="read-to-bottom-wow">Wow, you, er, read all the way to the bottom. Probably should’ve expected that.<br />Well, one thing left to do now :)</div><a href="itunes" target="_blank" class="no-style-link"><img src="images/app-store-badge.svg" /></a></div>
+			</div>
+		</div>
+
+		<div id="global-footer" class="page alternate-bg primary-text-color">
+			<div id="contact-links">Get in Contact and Stay Updated:<br /><br />
+			<a target="_blank" href="http://twitter.com/hyphenreader" class="twitter-link">@hyphenreader</a>
+			<span class="spacer-30"></span>
+			<a href="mailto:hyphenreader@gmail.com" class="mail-link">hyphenreader@gmail.com</a>
+			<span class="spacer-30"></span>
+			<a target="_blank" href="https://www.facebook.com/Hyphen-Reader-1727520424146142" class="facebook-link">Hyphen Reader</a></div>
+			
+			<div id="global-footer-links">
+				<a target="_blank" href="press-kit.zip">Press Kit</a>
+				<a target="_blank" href="https://github.com/hyphen-reader/hyphen/wiki">Wiki</a>
+				<a target="_blank" href="https://github.com/hyphen-reader/hyphen/issues">Issue Tracker</a>
+			</div>
+		</div>
 	</body>
 </html>
