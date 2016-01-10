@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+var onDocumentLoaded = function(){
 	var link = document.getElementById("contact-and-support-link");
 	var footer = document.getElementById("global-footer");
 
@@ -9,4 +9,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
 		footer.classList.add("active");
 	}, false);
-}, false);
+};
+
+var readyState = document.readyState;
+
+if(readyState == "complete" || readyState == "interactive"){
+	onDocumentLoaded();
+} else {
+	document.addEventListener("DOMContentLoaded", onDocumentLoaded, false);
+}
