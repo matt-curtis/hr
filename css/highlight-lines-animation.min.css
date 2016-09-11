@@ -1,0 +1,1 @@
+@keyframes highlight-line-animation{to{fill:#E2E2E2}}#annotate-svg-animation .green-highlight,#annotate-svg-animation .red-highlight,#annotate-svg-animation .yellow-highlight{animation:1s linear infinite alternate highlight-line-animation}
